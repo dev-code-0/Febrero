@@ -1,0 +1,113 @@
+body {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin: 50px;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+h1 {
+    color: #960f0398;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(46, 42, 42, 0.3);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(255, 65, 65);
+}
+
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: white;
+}
+
+/* text */
+
+
+
+
+#story-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#options-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.option-button {
+    font-family: 'Dancing Script', cursive;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #ff4f4f;
+    transform: scale(1.1);
+}
+
+.final-message {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-top: 20px;
+}
+
+#restart-button {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 40px;
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    background-color: #db343c;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}

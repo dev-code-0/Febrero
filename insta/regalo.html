@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Descubre el Mensaje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive !important;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffefd5; 
+            text-align: center;
+        }
+        .Btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition-duration: .3s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+            background-color: rgb(255, 65, 65);
+        }
+
+        /* plus sign */
+        .sign {
+            width: 100%;
+            transition-duration: .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sign svg {
+            width: 17px;
+        }
+
+        .sign svg path {
+            fill: white;
+        }
+
+        /* text */
+        .container {
+            max-width: 340px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+        .option {
+            font-size: 64px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px;
+            color: #ff69b4; 
+            transition: transform 0.2s ease;
+        }
+        .option:hover {
+            transform: scale(1.1); 
+        }
+        .message {
+            display: none;
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .message:target {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        a.button {
+            background-color: #008cba; 
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 5px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.2s ease;
+        }
+        a.button:hover {
+            background-color: #007ba7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="../index.html" style="display: inline-block; float: left;">
+        <button class="Btn">
+            <div class="sign">
+                <svg viewBox="0 0 512 512">
+                    <path
+                        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                    </path>
+                </svg>
+            </div>
+        </button>
+    </a>
+    <h2>Encuentra la sorpresa</h2>
+    <p>Elige un regalo 🎁</p>
+    
+    <a href="#opcion1" class="option">🎁</a>
+    <a href="#opcion2" class="option">🎁</a>
+    <a href="#opcion3" class="option">🎁</a>
+    
+    <div id="opcion1" class="message">¡Aquí no es! Pero cada intento te acerca más. 😊</div>
+    <div id="opcion2" class="message">¡Ups! Aún no encuentras el premio. Sigue buscando, ¡vale la pena! 💪</div>
+    <div id="opcion3" class="message">
+        <h3>¡Enhorabuena! Has encontrado el premio. 🎉</h3>
+         Espero aceptes 😆
+        <br><a href="../quieressermisanvalentin-main/index.html" class="button">Aquí lo tienes</a>
+    </div>
+</div>
+
+</body>
+</html>
